@@ -9,7 +9,7 @@ export function Hero({ name, text, tagline }: HeroProps) {
 
   return (
     <section className="relative overflow-hidden rounded-3xl bg-brand-green text-brand-cream min-h-[360px] sm:min-h-[440px] lg:min-h-[540px]">
-      <div className="absolute inset-0 hidden sm:block">
+      <div className="absolute inset-0 hidden lg:block">
         <Image
           src="/banner.png"
           alt="像老乡鸡那样做饭的插画背景"
