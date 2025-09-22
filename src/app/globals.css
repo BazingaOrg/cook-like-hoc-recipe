@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --brand-green: #0d7a3a;
+  --brand-dark: #143928;
+  --brand-cream: #f6f1e3;
+  --brand-sand: #dacdb7;
+  --brand-orange: #f2a23a;
+  --brand-muted: #6f8073;
+}
+
+@theme inline {
+  --color-brand-green: var(--brand-green);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-cream: var(--brand-cream);
+  --color-brand-sand: var(--brand-sand);
+  --color-brand-orange: var(--brand-orange);
+  --color-brand-muted: var(--brand-muted);
+  --color-surface: #ffffff;
+  --color-ink: #1f2520;
+  --font-sans: var(--font-body);
+  --font-serif: var(--font-display);
+}
+
+body {
+  background: var(--brand-cream);
+  color: var(--brand-dark);
+  font-family: var(--font-body), "PingFang SC", "Microsoft YaHei", "Heiti SC", sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  font-family: var(--font-display), "Songti SC", "SimSun", serif;
+  font-weight: 600;
+}
+
+:where(a:not([class])) {
+  color: inherit;
+}
+
+:where(a:not([class])):hover {
+  color: var(--brand-green);
+}
+
+::selection {
+  background: var(--brand-green);
+  color: var(--brand-cream);
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
